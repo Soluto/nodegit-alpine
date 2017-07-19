@@ -11,5 +11,3 @@ RUN mkdir /nodegit && \
     rm yarn.lock package.json && \
     rm -rf /tmp/* /var/cache/apk/* && \
     yarn cache clean
-
-WORKDIR /
