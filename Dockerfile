@@ -1,6 +1,7 @@
 FROM node:8.1.4-alpine
 
-RUN cd /nodegit && apk update && \
+RUN cd /nodegit && \
+    apk update && \
     apk upgrade && \
     apk add git libgit2-dev && \
     apk add python tzdata pkgconfig build-base && \
